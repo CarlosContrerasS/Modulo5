@@ -95,14 +95,19 @@
         </tr>
     </thead>
     <tbody>
-		<c:forEach items="${listaempleados}" var="empleado">
+		<c:forEach items="${listV}" var="empleado" >
         <tr>
-			<td>${empleado.getNombreempleado()}</td>
+        
+			<td>${empleado.getNombreEmpleado()}</td>
 			<td>${empleado.getEspecialidad()}</td>
-		<td>
-			<a href="${pageContext.request.contextPath}/EliminarEmpleado?rut_empleado=${empleado.getRut_empleado()}">Eliminar</a>&nbsp;
-			<a href="${pageContext.request.contextPath}/EditarEmpleado?rut_empleado=${empleado.getRut_empleado()}">Editar</a>&nbsp;
+			
+		<td >
+			
+			<a href="EliminarEmpleadoP?RutEmpleado=${empleado.getRutEmpleado()}">Eliminar</a>&nbsp;
+			<a href="editEmpleadoC?RutEmpleado=${empleado.getRutEmpleado()}">Editar</a>&nbsp;
+            
 		</td>
+		
 		</tr>
 	</c:forEach>
     </tbody>

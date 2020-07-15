@@ -75,25 +75,32 @@
             <h1>Editar Cliente</h1>
             <h3 style="margin-bottom: 3%;">Por favor, ingrese el RUT sin puntos y guion</h3>
         </div>
-          <form method="get" action="EditarCliente" style="margin-bottom: 3%;">
-              Busqueda Cliente por Rut: <input type="search" name="rut" placeholder="Coloque el RUT sin puntos ni guion.">
+          <form method="get" action="editClienteC" style="margin-bottom: 3%;">
+              Busqueda Cliente por Rut: <input type="search" name="Rut" placeholder="Coloque el RUT sin puntos ni guion.">
               
           
               <input type="submit" value="Buscar">
             </form>
             <div class="formulario" >
-                <form method="post" action="EditarCliente">
+                <form method="post" action="editsaveClienteC">
+                
+                	<label for="rut">Rut </label><br/>
+                    <input type="text" class="campo_formulario" name="Rut" value="${listaCliente.getRut()}"/><br/>
+                    
                     <label for="nombre">Nombre </label><br/>
-                    <input type="text" class="campo_formulario" name="nombre" value="${lista.getNombre()}"/><br/>
+                    <input type="text" class="campo_formulario" name="Nombre" value="${listaCliente.getNombre()}"/><br/>
                     <label for="telefono">Telefono </label><br/>
-                    <input type="tel" class="campo_formulario" name="telefono" value="${lista.getTelefono()}" /><br/>
-                    <label for="correo">Correo electronico </label><br/>
-                    <input type="email" class="campo_formulario" name="correo" value="${lista.getCorreoElectronico()}"/><br/>
+                    <input type="tel" class="campo_formulario" name="Telefono" value="${listaCliente.getTelefono()}" /><br/>
+                    <label for="mail">Mail </label><br/>
+                    <input type="email" class="campo_formulario" name="Mail" value="${listaCliente.getMail()}"/><br/>
                     <label for="rubro">Rubro </label><br/>
-                    <input type="text" class="campo_formulario" name="rubro" value="${lista.getRubro()}"/><br/>
-                    <label for="direccion">Direccion </label><br/>
+                    <input type="text" class="campo_formulario" name="Rubro" value="${listaCliente.getRubro()}"/><br/>
+                      <label for="direccion">Direccion </label><br/>
+                    <input type="text" class="campo_formulario" name="Direccion" value="${listaCliente.getDireccion()}"/><br/>
+                     <input type="hidden" name="Rut" value="${ListaCliente.getRut()}" />
                     <input type="submit" value="Agregar cliente" />
                 </form>
+                
         </div>
         <footer>
             <p>Diseño - Talentosos Desarrolladores Jr - 2020</p>

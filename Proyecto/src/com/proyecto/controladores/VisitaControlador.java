@@ -33,7 +33,7 @@ public class VisitaControlador {
 	public String Agregar(@ModelAttribute("vis") Visitas vis) {
 		daovis.AgregarVisita(vis);
 		log.info("Visita creada; " + vis.toString());
-		return "redirect:/ListarVisitasC";
+		return "redirect:/ListarVisitaC";
 	}
 	@RequestMapping("/ListarVisitaC")
 	public String ListarVisitas(Model V) {

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -76,23 +76,25 @@ $("ul").click(function(ev){
             <h1>Editar Profesional</h1>
             <h3 style="margin-bottom: 3%;">Por favor, ingrese el RUT sin puntos y guion</h3>
         </div>
-          <form method="get" action="EditarEmpleado" style="margin-bottom: 3%;">
-              Busqueda Cliente por Rut: <input type="search" name="rut_empleado" placeholder="Coloque el RUT sin puntos ni guiçon.">
+          <form method="get" action="editEmpleadoC" style="margin-bottom: 3%;">
+              Busqueda Cliente por Rut: <input type="search" name="RutEmpleado" placeholder="Coloque el RUT sin puntos ni guion.">
           
               <input type="submit" value="Buscar">
             </form>
             <div class="formulario">
-                <form method="post" action="EditarCliente">
+            
+         
+                <form method="post" action="editsaveEmpleadoC" >
                    
                     <label for="nombre">Nombre </label><br/>
-                    <input type="text" class="campo_formulario" name="nombre" value="${regcli.getNombreempleado()}"/><br/>
+                    <input type="text" class="campo_formulario" name="NombreEmpleado" value="${ListaE.getNombreEmpleado()}"/><br/>
                     <label for="rubro">Especialidad </label><br/>
-                    <input type="text" class="campo_formulario" name="especialidad" value="${regcli.getEspecialidad()}"/><br/>
-                    <input type="hidden" name="rut_empleado" value="${regcli.getRut_empleado()}" />
-                    <input type="submit" value="Agregar Empleado" value="${regcli.getNombreempleado()}" />
+                    <input type="text" class="campo_formulario" name="Especialidad" value="${ListaE.getEspecialidad()}"/><br/>
+                    <input type="hidden" name="RutEmpleado" value="${ListaE.getRutEmpleado()}" />
+                    <input type="submit" value="Agregar Empleado"  />
                     
-          
                 </form>
+              
         </div>
         <footer>
             <p>Diseño - Talentosos Desarrolladores Jr - 2020</p>

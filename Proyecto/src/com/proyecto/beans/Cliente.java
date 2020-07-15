@@ -75,7 +75,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [Rut=" + Rut + ", Nombre=" + Nombre + ", Telefono=" + Telefono + ", CorreoElectronico="
+		return "Cliente [Rut=" + Rut + ", Nombre=" + Nombre + ", Telefono=" + Telefono + ", Mail="
 				+ Mail + ", Rubro=" + Rubro + ", Direccion=" + Direccion + ", getRut()=" + getRut()
 				+ ", getNombre()=" + getNombre() + ", getTelefono()=" + getTelefono() + ", getRubro()=" + getRubro()
 				+ ", getDireccion()=" + getDireccion() + ", getMail()=" + getMail() + "]";

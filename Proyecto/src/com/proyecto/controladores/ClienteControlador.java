@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.apache.log4j.Logger;
 
-import com.proyecto.controladores.ClienteControlador;
+
 import com.proyecto.beans.Cliente;
 import com.proyecto.dao.ClienteDao; 
 
@@ -46,7 +46,7 @@ public class ClienteControlador {
 	 @RequestMapping("/ListarClienteC")    
 	    public String ListarCliente(Model m){    
 	        List<Cliente> list=dao.ListaClientes();		//genera la lista que mostrara
-	        m.addAttribute("list", list);  
+	        m.addAttribute("listCl", list);  
 	        log.info("Listado de clientes");
 	        return "ListarClientesV";			//Manda a la vista para poder verlos.
 	    }
@@ -70,34 +70,33 @@ public class ClienteControlador {
 		  return "redirect:/ListarClienteC"; 		// Manda al controlador de listar, para que genere la kista y luego mostrar los clientes
 	    }
 	  
-	 @RequestMapping(value="/EliminarCliente", method = RequestMethod.GET)    
-	    public String Eliminar2(@RequestParam("rut") int rut){
-		 dao.Eliminar(rut);								//buscar en la base el rut y lo elimina, si no lo encuentra no tira error.
+	 @RequestMapping(value="/EliminarClienteP", method = RequestMethod.GET)    
+	    public String Eliminar2(@RequestParam("Rut") int Rut){
+		 dao.Eliminar(Rut);								//buscar en la base el rut y lo elimina, si no lo encuentra no tira error.
 		 log.debug("DEBUG - Cliente eliminado");
 		  return "redirect:/ListarClienteC"; 		// Manda al controlador de listar, para que genere la kista y luego mostrar los clientes
 	    }
 	 
-	 @RequestMapping("/EditarClienteC")    
-	    public String Actualizar( Model m){    
-    	 m.addAttribute("command", new Cliente());
-	     log.info("Ingreso a edición de clientes");
-	        return "BuscarEditarClienteV";
+	 @RequestMapping("/EditarClienteV")
+	    public String FormularioE(Model m){
+	    	 m.addAttribute("command", new Cliente());
+		        log.info("Ingreso a formulario de actualizacion de empleados");
+		        return "EditarClienteV";		
 	    }
-
-	    @RequestMapping(value="/EditarCliente", method = RequestMethod.GET)    
-	    public String EditarListar(Model c){    
-	    	List<Cliente> lista=dao.ListaClientes();		//genera la lista que mostrara
-		       c.addAttribute("lista", lista);  
+	
+	 @RequestMapping(value="/editClienteC", method = RequestMethod.GET)
+	    public String edit2(@RequestParam("Rut") int Rut, Model m){
+		 Cliente cli =dao.getEmpById(Rut);
+		        m.addAttribute("listaCliente",cli);
+		        log.info("Ingreso a edición de clientes");
+		        return "EditarClienteV";
+		    }
+	
+	 @RequestMapping(value="/editsaveClienteC", method = RequestMethod.POST)
+	   public String editsave2(@ModelAttribute("c") Cliente c){
+	        dao.update(c);
 	        log.info("Procesando edición de clientes");
-	        return "redirect:/EditarClienteV";
-	    }
-	    
-	    @RequestMapping(value="/EditarCliente", method = RequestMethod.POST)    
-	    public String Editar_Listado(@ModelAttribute("cliente") Cliente cliente){
-	    	dao.Editar(cliente);
-	    	log.info("Mostrando la edición de clientes");
 	        return "redirect:/ListarClienteC";
 	    }
-
 	   
 }

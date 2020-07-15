@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.RowMapper;
 import com.proyecto.beans.Cliente;
 
 
+
 public class ClienteDao {
 	
 	JdbcTemplate template;
@@ -23,20 +24,12 @@ public class ClienteDao {
 	    return template.update(sql);
 	}
 	
-	public int Editar(Cliente c){    
-	    String sql="update Cliente set nombre='"+c.getNombre()+"', telefono="+c.getTelefono()+",correoelectronico='"+c.getMail()+"', rubro='"+c.getRubro()+"', direccion='"+c.getDireccion()+"' where rut="+c.getRut()+"";
-	    return template.update(sql);    
-	}   
 	
 	public int Eliminar(int rut){    
 	    String sql="delete from Cliente where rut="+rut;
 	    return template.update(sql);
 	}    
 
-	public Cliente Buscar(int rut){    
-	    String sql="select * from Cliente where rut = "+rut;
-	    return template.queryForObject(sql, new Object[]{rut},new BeanPropertyRowMapper<Cliente>(Cliente.class));    
-	}
 	
 	
 	public List<Cliente> ListaClientes(){    
@@ -54,5 +47,15 @@ public class ClienteDao {
 	    });    
 	}    	
 	
+	public Cliente getEmpById(int rut){   
+		
+	    String sql="select * from Cliente where rut = ?";
+	    return template.queryForObject(sql, new Object[]{rut}, new BeanPropertyRowMapper<Cliente>(Cliente.class));
+	}
+	
+	public int update(Cliente c){ 
+		String sql="update Cliente set nombre='"+c.getNombre()+"', telefono="+c.getTelefono()+", mail='"+c.getMail()+"', rubro='"+c.getRubro()+"', direccion='"+c.getDireccion()+"' where rut="+ c.getRut() +"";
+	    return template.update(sql);     
+	}  
 	
 }

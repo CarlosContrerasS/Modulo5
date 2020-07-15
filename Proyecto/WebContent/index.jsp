@@ -30,8 +30,8 @@
     <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
       <ul>
         <li><a href="AgregarClienteC">Crear Cliente</a></li>
-        <li><a href="EditarClienteC">Editar Cliente</a></li>
-        <li><a href="/EliminarClienteC">Borrar Cliente</a></li>
+        <li><a href="EditarClienteV">Editar Cliente</a></li>
+        <li><a href="EliminarClienteC">Borrar Cliente</a></li>
         <li><a href="/ListadoGlobal">Informe Cliente</a></li>
         <li><a href="ListarClienteC">Listado de Clientes</a></li>
       </ul>
@@ -39,12 +39,12 @@
     <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
       <ul>
           <li><a href="#">Crear Profesional</a></li>
-          <li><a href="/AgregarEmpleado">Ingresar Profesional</a></li>
-        <li><a href="/EditarEmpleado.jsp">Editar Profesional</a></li>
-        <li><a href="/EliminarEmpleado.jsp">Borrar Profesional</a></li>
-        <li><a href="/ListadoEmpleados">Listado de Profesionales</a></li>
-        <li><a href="/AgregarVisita">Agendar Visita</a></li>
-        <li><a href="/ListarVisita">Vistas Agendas</a></li>
+          <li><a href="AgregarEmpleadoC">Ingresar Profesional</a></li>
+        <li><a href="EditarEmpleadoV">Editar Profesional</a></li>
+        <li><a href="EliminarEmpleadoC">Borrar Profesional</a></li>
+        <li><a href="ListarEmpleadoC">Listado de Profesionales</a></li>
+        <li><a href="AgregarVisitaC">Agendar Visita</a></li>
+        <li><a href="ListarVisitaC">Vistas Agendas</a></li>
       </ul>
       
       

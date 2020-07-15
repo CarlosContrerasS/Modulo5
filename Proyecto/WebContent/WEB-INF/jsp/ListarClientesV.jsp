@@ -31,56 +31,56 @@
 	})
 		</script>
     </head>
-<body>
-	<header>
-		<input type="checkbox" id="btn-menu" />
-<label for="btn-menu"><i class="fa fa-bars"></i></label>
-<nav class="menu" style="z-index: 4;">
-	<div id="logo"><a href="./index.jsp"><img src="./img/logo.png" title="Logo Segurimax"></a>
-	</div>
-<ul>
-<li><a href="./index.jsp">Inicio</a></li>
-<li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
-  <ul>
-	<li><a href="${pageContext.request.contextPath}/AgregarCliente">Crear Cliente</a></li>
-	<li><a href="${pageContext.request.contextPath}/EditarCliente.jsp">Editar Cliente</a></li>
-	<li><a href="${pageContext.request.contextPath}/EliminarCliente.jsp">Borrar Cliente</a></li>
-	<li><a href="${pageContext.request.contextPath}/ListadoGlobal">Informe Cliente</a></li>
-	<li><a href="${pageContext.request.contextPath}/ListadoClientes">Listado de Clientes</a></li>
-  </ul>
-</li>
-<li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
-  <ul>
-	  <li><a href="#">Crear Profesional</a></li>
-	  <li><a href="${pageContext.request.contextPath}/AgregarEmpleado">Ingresar Profesional</a></li>
-	<li><a href="${pageContext.request.contextPath}/EditarEmpleado.jsp">Editar Profesional</a></li>
-	<li><a href="${pageContext.request.contextPath}/EliminarEmpleado.jsp">Borrar Profesional</a></li>
-	<li><a href="${pageContext.request.contextPath}/ListadoEmpleados">Listado de Profesionales</a></li>
-	<li><a href="${pageContext.request.contextPath}/AgregarVisita">Agendar Visita</a></li>
-	<li><a href="${pageContext.request.contextPath}/ListarVisita">Vistas Agendas</a></li>
-  </ul>
-  
-  
-</li>
-<li><a href="#">Accidentes</a>
-	<ul>
-		<li><a href="${pageContext.request.contextPath}/AgregarAccidente">Ingreso Accidente</a></li>
-		<li><a href="${pageContext.request.contextPath}/ListadoAccidentes">Listado Accidentes</a></li>
-	</ul></li>
-
-<li><a href="#">Pagos</a>
-	<ul>
-		<li><a href="${pageContext.request.contextPath}/AgregarPago.jsp">Ingreso Pago</a></li>
-		<li><a href="${pageContext.request.contextPath}/ListadoPagos">Informe Pagos</a></li>
-		<li><a href="${pageContext.request.contextPath}/ListarAtrasos.jsp">Pagos Atrasados</a></li>
-	</ul></li>
-	<li><a href="${pageContext.request.contextPath}/Global">Informe Global</a>
-	   </li>
-		
-</ul>
-	</nav>
-</header>
-<br><br><br><br><br><br>
+<body style="background-image: url(./img/fondo.svg); background-position: center center;">
+        <header>
+            <input type="checkbox" id="btn-menu" />
+    <label for="btn-menu"><i class="fa fa-bars"></i></label>
+    <nav class="menu" style="z-index: 4;">
+    <ul>
+    <li><a href="./index.jsp">Inicio</a></li>
+    <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
+      <ul>
+        <li><a href="AgregarClienteC">Crear Cliente</a></li>
+        <li><a href="EditarClienteC">Editar Cliente</a></li>
+        <li><a href="/EliminarClienteC">Borrar Cliente</a></li>
+        <li><a href="/ListadoGlobal">Informe Cliente</a></li>
+        <li><a href="ListarClienteC">Listado de Clientes</a></li>
+      </ul>
+    </li>
+    <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
+      <ul>
+          <li><a href="#">Crear Profesional</a></li>
+          <li><a href="/AgregarEmpleado">Ingresar Profesional</a></li>
+        <li><a href="/EditarEmpleado.jsp">Editar Profesional</a></li>
+        <li><a href="/EliminarEmpleado.jsp">Borrar Profesional</a></li>
+        <li><a href="/ListadoEmpleados">Listado de Profesionales</a></li>
+        <li><a href="/AgregarVisita">Agendar Visita</a></li>
+        <li><a href="/ListarVisita">Vistas Agendas</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Accidentes</a>
+        <ul>
+            <li><a href="/AgregarAccidente">Ingreso Accidente</a></li>
+            <li><a href="/ListadoAccidentes">Listado Accidentes</a></li>
+        </ul></li>
+         <li><a href="#">Visitas</a>
+        <ul>
+            <li><a href="./AgregarVisitaC">Agregar Visita</a></li>
+        </ul></li>
+    <li><a href="#">Pagos</a>
+        <ul>
+            <li><a href="/AgregarPago.jsp">Ingreso Pago</a></li>
+            <li><a href="/ListadoPagos">Informe Pagos</a></li>
+            <li><a href="/ListarAtrasos.jsp">Pagos Atrasados</a></li>
+        </ul></li>
+        <li><a href="/Global">Informe Global</a>
+           </li>
+    </ul>
+        </nav>
+    </header>
+    <div id="header_img">
+        <img src="./img/img_header_admin.png" title="Segurimax - Inicio" style="width: 100%;">
+    </div>
 <h1 id="titulo">Listado de clientes</h1>
 <br><br>
 <c:if test="${ccmensaje != null}">
@@ -99,7 +99,7 @@
 		<th>Acciones</th>
 	</tr>
 </thead>
-	<c:forEach items="${list}" var="cliente">
+	<c:forEach items="${listCl}" var="cliente">
 	<tbody>
 	<tr>
 		<td>${cliente.getRut()}</td>
@@ -111,9 +111,9 @@
 		<td>
 		
 			
-			<a href="${pageContext.request.contextPath}/EliminarCliente?rut=${cliente.getRut()}">Eliminar</a>&nbsp;
-			<a href="${pageContext.request.contextPath}/EditarCliente?rut=${cliente.getRut()}">Editar</a>&nbsp;
-		</td>
+			
+			<a href="EliminarClienteP?Rut=${cliente.getRut()}">Eliminar</a>&nbsp;
+			<a href="editClienteC?Rut=${cliente.getRut()}">Editar</a>&nbsp;
 	</tr>
 	</tbody>
 </c:forEach>

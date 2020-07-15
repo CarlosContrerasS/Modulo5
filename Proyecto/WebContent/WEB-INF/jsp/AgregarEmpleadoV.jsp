@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/fontello.css.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Segurimax - Seguridad Laboral</title>  
+    <title>Segurimax - Seguridad Laboral CREar empleado</title>  
     <script>
                 $(".submenu").click(function(){
         $(this).children("ul").slideToggle();
@@ -77,18 +77,18 @@
             <h3>Por favor, llene todos los campos del formulario</h3>
         </div>
             <div class="formulario">
-                <form method="post" action="AgregarEmpleado">
+                <form method="post" action="AgregarEmpleadoP">
                     <label for="RUT">RUT</label><br/>
-                    <input type="text" class="campo_formulario" name="rut_empleado" /><br/>
+                    <input type="text" class="campo_formulario" name="RutEmpleado" /><br/>
                     <label for="nombre">Nombre </label><br/>
-                    <input type="text" class="campo_formulario" name="nombre"/><br/>
+                    <input type="text" class="campo_formulario" name="NombreEmpleado"/><br/>
                     <label for="especialidad">Especialidad </label><br/>
-                    <input type="text" class="campo_formulario" name="especialidad" /><br/>
+                    <input type="text" class="campo_formulario" name="Especialidad" /><br/>
                     <input type="submit" value="Agregar Empleado" />
                 </form>
         </div>
         <footer>
-            <p>Diseño - Talentosos Desarrolladores Jr - 2020</p>
+            <p>Diseño - Talentosos Desarrolladores Jr - 2020 cprofesionales</p>
         </footer>
     </body>
 
