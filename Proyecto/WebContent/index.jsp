@@ -20,91 +20,90 @@
         })
     </script>
 </head>
-    <body style="background-image: url(./img/fondo.svg); background-position: center center;">
+    <body style="background-image: url(./img/fondo.svg); background-position: center center; margin: 0%;">
         <header>
             <input type="checkbox" id="btn-menu" />
     <label for="btn-menu"><i class="fa fa-bars"></i></label>
     <nav class="menu" style="z-index: 4;">
-    <ul>
-    <li><a href="./index.jsp">Inicio</a></li>
-    <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
-      <ul>
-        <li><a href="AgregarClienteC">Crear Cliente</a></li>
-        <li><a href="EditarClienteV">Editar Cliente</a></li>
-        <li><a href="EliminarClienteC">Borrar Cliente</a></li>
-        <li><a href="/ListadoGlobal">Informe Cliente</a></li>
-        <li><a href="ListarClienteC">Listado de Clientes</a></li>
-      </ul>
-    </li>
-    <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
-      <ul>
-          <li><a href="#">Crear Profesional</a></li>
-          <li><a href="AgregarEmpleadoC">Ingresar Profesional</a></li>
-        <li><a href="EditarEmpleadoV">Editar Profesional</a></li>
-        <li><a href="EliminarEmpleadoC">Borrar Profesional</a></li>
-        <li><a href="ListarEmpleadoC">Listado de Profesionales</a></li>
-        <li><a href="AgregarVisitaC">Agendar Visita</a></li>
-        <li><a href="ListarVisitaC">Vistas Agendas</a></li>
-      </ul>
-      
-      
-    </li>
-    <li><a href="#">Accidentes</a>
         <ul>
-            <li><a href="AgregarAccidenteC">Ingreso Accidente</a></li>
-            <li><a href="ListarAccidenteC">Listado Accidentes</a></li>
-        </ul></li>
-         <li><a href="#">Visitas</a>
-        <ul>
-            <li><a href="AgregarVisitaC">Agregar Visita</a></li>
-            <li><a href="ListarVisitaC">Listar Visitas</a></li>
-        </ul></li>
-    
-    <li><a href="#">Pagos</a>
-        <ul>
-            <li><a href="AgregarPagoC">Ingreso Pago</a></li>
-            <li><a href="ListarPagoC">Informe Pagos</a></li>
-            <li><a href="/ListarAtrasos.jsp">Pagos Atrasados</a></li>
-        </ul></li>
-        
-        <li><a href="#">Asesorias</a>
-        <ul>
-            <li><a href="AgregarAsesoriaC"> Ingreso Asesoria</a></li>
-            <li><a href="ListarAsesoriaC"> Listado de Asesorias</a></li>
-        </ul></li>
-        <li><a href="/Global">Informe Global</a>
-           </li>
+            <li><a href="./index.jsp">Inicio</a></li>
+            <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
+              <ul>
+                <li><a href="AgregarClienteC">Crear Cliente</a></li>
+                <li><a href="EditarClienteV">Editar Cliente</a></li>
+                <li><a href="EliminarClienteC">Borrar Cliente</a></li>
+                <li><a href="ListarClienteC">Listado de Clientes</a></li>
+                <li><a href="/ListadoGlobal">Informe Cliente</a></li>
+              </ul>
+            </li>
+            <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
+              <ul>
+                  <li><a href="AgregarEmpleadoC">Ingresar Profesional</a></li>
+                <li><a href="EditarEmpleadoV">Editar Profesional</a></li>
+                <li><a href="EliminarEmpleadoC">Borrar Profesional</a></li>
+                <li><a href="ListarEmpleadoC">Listado de Profesionales</a></li>
+                <li><a href="AgregarVisitaC">Agendar Visita</a></li>
+                <li><a href="ListarVisitaC">Vistas Agendas</a></li>
+              </ul>
+              
+              
+            </li>
+            <li><a href="#">Accidentes</a>
+                <ul>
+                    <li><a href="AgregarAccidenteC">Ingreso Accidente</a></li>
+                    <li><a href="ListarAccidenteC">Listado Accidentes</a></li>
+                </ul></li>
+                 <li><a href="#">Visitas</a>
+                <ul>
+                    <li><a href="AgregarVisitaC">Agregar Visita</a></li>
+                    <li><a href="ListarVisitaC">Listar Visitas</a></li>
+                </ul></li>
             
-    </ul>
+            <li><a href="#">Pagos</a>
+                <ul>
+                    <li><a href="AgregarPagoC">Ingreso Pago</a></li>
+                    <li><a href="ListarPagoC">Informe Pagos</a></li>
+                    <li><a href="ListarAtrasosC">Pagos Atrasados</a></li>
+                </ul></li>
+                
+                <li><a href="#">Asesorias</a>
+                <ul>
+                    <li><a href="AgregarAsesoriaC">Ingreso Asesoria</a></li>
+                    <li><a href="ListarAsesoriaC">Listado de Asesorias</a></li>
+                </ul></li>
+                <li><a href="ListarGlobalC">Informe Global</a></li>
+                <li><a href="ListarActividadesC">Reporte de Actividades</a></li>
+                    
+            </ul>
         </nav>
     </header>
     <div id="header_img">
         
         <img src="./img/img_header.png" title="Segurimax - Inicio" style="width: 100%;">
     </div>
-
+​
     <div id="titulo">
         <h1 style="margin-top: 8%;">Bienvenidos a Securimax</h1>
         <br>
         <h3 style="margin-bottom: 3%;">Por favor, escoja el perfil al que desea acceder</h3>
     </div>
-
-
+​
+​
             <div class="contenedor_img_box col-s-12 col-l-12 col-12">
-
+​
                 <div class="img_box col-s-12 col-l-4 col-4">
-                    <img src="./img/cliente.svg"> <br>
+                    <a href="#"><img src="./img/cliente.svg"></a> <br>
                     <h4><a href="${pageContext.request.contextPath}/AgregarPago">Clientes</a></h4><br>
                 </div>
             
                 <div class="img_box col-s-12 col-l-4 col-4">
-                    <img src="./img/profesional.svg"> <br>
+                    <a href="#"><img src="./img/profesional.svg"></a> <br>
                     <h4><a href="${pageContext.request.contextPath}/AgregarCliente">Profesionales</a></h4><br>
                 </div>
             
                 <div class="img_box col-s-12 col-l-4 col-4">
-                    <img src="./img/administrador.svg"> 
-                    <h4><a href="${pageContext.request.contextPath}/AgregarEmpleado">Administrador</a></h4><br>
+                    <a href="acceso administrador.html"><img src="./img/administrador.svg"></a>
+                    <h4><a href="AccesoAdministradorC">Administrador</a></h4><br>
                 </div>
           
             </div>
@@ -121,5 +120,4 @@
             <p>Diseño - Talentosos Desarrolladores Jr - 2020</p>
         </footer>
     </body>
-
 </html>

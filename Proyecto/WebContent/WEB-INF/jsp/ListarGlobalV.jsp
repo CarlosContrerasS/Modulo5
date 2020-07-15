@@ -105,55 +105,39 @@ $("ul").click(function(ev){
 		<th>Rut Cliente</th>
 		<th>Nombre Cliente</th>
 		<th>Fecha de Visita</th>
-		<th>Rut de Empleado</th>
-		<th>Monto Regular</th>
-		<th>Fecha de Accidente</th>
+		<th>ID Visita</th>
+		<th>Fecha de Capacitacion</th>
+		<th>Numero de Asistentes</th>
+		<th>Fecha de Asesorias</th>
+		<th>Gestion</th>
+		<th>IDPago</th>		
 		<th>Fecha de Pago</th>
+		<th>Monto Regular</th>
+		<th>Monto Adicional</th>
+		<th>Accidentabilidad</th>
+
 		<th>Suceso</th>
 	</tr>
 	</thead>
-	<c:forEach items="${listaglobal}" var="Listado">
+	<c:forEach items="${listaGlobal}" var="reporteglobal">
 	<tr>
-		<td>${Listado.getRut_cliente()}</td>
-		<td>${Listado.getNombre_cliente()}</td>
-		<td>${Listado.getFecha_visita()}</td>
-		<td>${Listado.getRut_empleado()}</td>
-		<td>${Listado.getMontoregular()}</td>
-		<td>${Listado.getFecha_accidente()}</td>
-		<td>${Listado.getMesanio()}</td>
-		<td>${Listado.getSuceso()}</td>
+		<td>${rglo.getRut()}</td>
+		<td>${rglo.getNombre()}</td>
+		<td>${rglo.getIDPag()}</td>
+		<td>${rglo.getFechaVisita()}</td>
+		<td>${rglo.getIDVisita()}</td>
+		<td>${rglo.getFechaCapacitacion()}</td>
+		<td>${rglo.getNumAsistentes()}</td>
+		<td>${rglo.getFechaAseosrias()}</td>
+		<td>${rglo.getIDPago()}</td>
+		<td>${rglo.getFechaPago()}</td>
+		<td>${rglo.getMontoRegular()}</td>
+		<td>${rglo.getMontoAdicional()}</td>
+		<td>${rglo.getAccidentabilidad()}</td>
 	</tr>
 	</c:forEach>
 </table>
-            </div>
-            <br>
-            <br>
-            <h3 id="titulo">Listado total de clientes con pagos atrasados</h3>
-            <div id="tabla" style="background-color:#FBFBFB; padding: 3%; width: 100%; text-align: center;">
-                <table id="example2" class="row-border" style="width:50%">
-                        <thead>
-                        <tr>
-                            <th>Rut</th>
-                            <th>Nombre</th>
-                            <th>Nº factura</th>
-                            <th>Fecha</th>
-                            <th>Monto Regular</th>
-                            <th>Montos Adicionales</th>
-                        </tr>
-                        </thead>
-                        <c:forEach items="${listaAtrasos}" var="atrasos">
-                        <tr>
-                            <td>${atrasos.getRut()}</td>
-                            <td>${atrasos.getNombre()}</td>
-                            <td>${atrasos.getIdpago()}</td>
-                            <td>${atrasos.getMesanio()}</td>
-                            <td>${atrasos.getMontoregular()}</td>
-                            <td>${atrasos.getMontoAdicionales()}</td>
-                    
-                        </tr>
-                        </c:forEach>
-                    </table>
-                </div>
+ </div>
             <footer>
                 <p>Diseño - Talentosos Desarrolladores Jr - 2020</p>
             </footer> 

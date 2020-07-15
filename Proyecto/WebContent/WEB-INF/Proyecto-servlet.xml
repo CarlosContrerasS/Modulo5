@@ -57,5 +57,15 @@
 	<bean id="daovis" class="com.proyecto.dao.VisitasDao">    
 		<property name="template" ref="jt"></property>    
 	</bean>
+	
+	<bean id="daorep" class="com.proyecto.dao.ReporteDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
  
+ 	<bean id="daoatr" class="com.proyecto.dao.AtrasosDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	<bean id="daorepG" class="com.proyecto.dao.ReporteGlobalDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
 </beans>
