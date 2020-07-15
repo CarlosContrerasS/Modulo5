@@ -13,7 +13,7 @@
  
 	<mvc:annotation-driven />
 	<context:component-scan
-		base-package="com.proyecto.controller" />
+		base-package="com.proyecto.controladores" />
 	<mvc:default-servlet-handler />
 
  
@@ -23,6 +23,39 @@
 			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">    
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>    
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>    
+		<property name="username" value="USER2"></property>    
+		<property name="password" value="user123_"></property>    
+	</bean>
+    
+	<bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">    
+		<property name="dataSource" ref="ds"></property>    
+	</bean>    
+    
+	<bean id="dao" class="com.proyecto.dao.ClienteDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	
+	<bean id="daoemp" class="com.proyecto.dao.EmpleadoDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+
+	<bean id="daopao" class="com.proyecto.dao.PagosDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	<bean id="daoacc" class="com.proyecto.dao.AccidentesDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	<bean id="daoase" class="com.proyecto.dao.AsesoriasDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	
+	<bean id="daovis" class="com.proyecto.dao.VisitasDao">    
+		<property name="template" ref="jt"></property>    
 	</bean>
  
 </beans>

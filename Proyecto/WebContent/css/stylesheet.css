@@ -4,37 +4,6 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;   
 }
-nav{
-    display: flex;
-    justify-content: center;
-    margin-top: 0%;
-    width: 100%;
-    padding-top: 1%;
-    background-color: #2d2c2c;
-    -webkit-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
-    -moz-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
-    box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
-}
-.menu ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.menu a {
-    display: block;
-    padding: 2em;
-    text-decoration: none;
-}
-.menu a:hover {
-    background-color: #CC673B;
-}
-.menu ul li ul {
-    display: none;
-}
-.menu ul li a:hover + ul, .menu ul li ul:hover {
-    display: block;
-}
 #logo{
     width: auto;
     padding-top: 1%;
@@ -77,11 +46,6 @@ nav{
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-.img_box img{
-    -webkit-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
-    -moz-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
-    box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
-}
 .img_box a:link{
     text-decoration:none;
     color: #2d2c2c;  
@@ -91,28 +55,20 @@ nav{
     color: #f18500;
 }
 .cont_aplicacion{
-   /* display: flex;*/
-    /*justify-content: center;*/
-    background-color: darkgrey;
-    padding: 3% 0% 3% 0%;
-}
-#img_aplicacion{
-    float: left;
-    align-content: center;
-    width: 100%;
-    margin: 0% 3%;
-}
-.img_aplicacion{
-    width: 50%;
-}
-#text_aplicacion{
-    float: left;
-    padding: 0% 3%;
-    text-align: justify;
-}
-#text_aplicacion h2{
+    /* display: flex;*/
+     /*justify-content: center;*/
+     padding: 3% 0% 3% 0%;
+     margin: 0%;
+ }
+ #text_aplicacion{
+    margin-bottom: 0%;
+    padding: 0% 8%;
     text-align: center;
 }
+#text_aplicacion h2{
+    margin-bottom: 2%;
+}
+
 form{  
     text-align: center;
     width: 100%;
@@ -226,8 +182,10 @@ footer{
     background-color: #2d2c2c;
     margin: 10% 0% 0% 0%;
     padding: 2%;
+    width: 100%;
     color: darkgrey;
     text-align: center;
+    align-self: baseline;
 }
 @media only screen and (min-width: 100px)  and (max-width: 600px) {
   /* For mobile phones: */  
@@ -253,7 +211,6 @@ footer{
     }
     .cont_aplicacion{
         display: flex;
-        background-color: darkgrey;
         }
         .img_aplicacion{
             width: 250%;
@@ -279,11 +236,8 @@ footer{
       }
       .img_box img{
         float: center;
-        width: 90%;
+        width: 50%;
     }
-      .cont_aplicacion{
-        background-color: darkgrey;
-      }
       .text_aplicacion {
           float: right;
       }
@@ -309,10 +263,9 @@ footer{
       }
       .img_box img{
         float: center;
-        width: 90%;
+        width: 50%;
     }
       .cont_aplicacion{
         display: flex;
-        background-color: darkgrey;
       }
 }
