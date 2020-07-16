@@ -24,7 +24,7 @@ ev.stopPropagation();
     <header>
         <input type="checkbox" id="btn-menu" />
 <label for="btn-menu"><i class="fa fa-bars"></i></label>
-   <nav class="menu" style="z-index: 4;">
+    <nav class="menu" style="z-index: 4;">
         <ul>
             <li><a href="./index.jsp">Inicio</a></li>
             <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
@@ -86,96 +86,28 @@ ev.stopPropagation();
 <div id="titulo">
     <h1 style="margin-top: 8%;">Securimax - Plataforma Administrador</h1>
     <br>
-    <h3 style="margin-bottom: 3%;">Por favor, escoja la opción a la que desea acceder</h3>
+    <h3 style="margin-bottom: 3%;">Por favor, escoja la opcion a la que desea acceder</h3>
 </div>
-<div class="contenedor_img_box col-s-12 col-l-12 col-12" style="margin: 10% 0%;">
-
-    <div class="img_box col-s-12 col-l-4 col-4">
-        <table style="text-align: center; width: 100%; margin: 3% 0%;">
-            <caption style="font-weight: bold; width: 100%;"><h2>Informes</h2></caption>
-            <tr>
-                <td><a href="ListarGlobalC">Informe Global</a></td>
-            </tr>
-            <tr>
-                <td><a href="ListarActividadesC">Informe Cliente</a></td>
-            </tr>
-            <tr>
-                <td><a href="ListarPagoC">Informe Pagos</a></td>
-            </tr>
-         </table>
-    </div>
-
-    <div class="img_box col-s-12 col-l-4 col-4">
-        <table style="text-align: center; width: 100%; margin: 3% 0%;">
-            <caption style="font-weight: bold; width: 100%;"><h2>Información de Clientes</h2></caption>
-            <tr>
-                <td><a href="AgregarClienteC">Ingresar nuevo Cliente</a></td>
-            </tr>
-            <tr>
-                <td><a href="EditarClienteV">Editar Cliente</a></td>
-            </tr>
-            <tr>
-                <td><a href="EliminarClienteC">Borrar Cliente</a></td>
-            </tr>
-            <tr>
-                <td><a href="ListarClienteC">Listado de Clientes</a></td>
-            </tr>
-         </table>
-    </div>
-
-    <div class="img_box col-s-12 col-l-4 col-4">
-        <table style="text-align: center; width: 100%; margin: 3% 0%;">
-            <caption style="font-weight: bold; width: 100%;"><h2>Información Profesionales</h2></caption>
-            <tr>
-                <td><a href="AgregarEmpleadoC">Ingresar nuevo Profesional</a></td>
-            </tr>
-            <tr>
-                <td><a href="EditarEmpleadoV">Editar Profesional</a></td>
-            </tr>
-            <tr>
-                <td><a href="EliminarEmpleadoC">Borrar Profesional</a></td>
-            </tr>
-            <tr>
-                <td><a href="ListarEmpleadoC">Listado de Profesionales</a></td>
-            </tr>
-         </table>
-    </div>
-  
-    </div>
     <div class="contenedor_img_box col-s-12 col-l-12 col-12" style="margin: 10% 0%;">
 
         <div class="img_box col-s-12 col-l-4 col-4">
             <table style="text-align: center; width: 100%; margin: 3% 0%;">
-                <caption style="font-weight: bold; width: 100%;"><h2>Pagos</h2></caption>
+                <caption style="font-weight: bold; width: 100%;"><h2>Accidentes</h2></caption>
                 <tr>
-                    <td><a href="AgregarPagoC">Ingresar nuevo Pago</a></td>
+                    <td><a href="AgregarAccidenteC">Ingresar Accidente</a></td>
                 </tr>
              </table>
         </div>
     
         <div class="img_box col-s-12 col-l-4 col-4">
             <table style="text-align: center; width: 100%; margin: 3% 0%;">
-                <caption style="font-weight: bold; width: 100%;"><h2>Actividades</h2></caption>
+                <caption style="font-weight: bold; width: 100%;"><h2>Asesoría</h2></caption>
                 <tr>
-                    <td><a href="AgregarVisitaC">Agendar Visita</a></td>
-                </tr>
-                <tr>
-                    <td><a href="ListarVisitaC">Visitas Agendadas</a></td>
+                    <td><a href="AgregarAsesoriaC">Solicitar Asesoría Especial</a></td>
                 </tr>
              </table>
         </div>
     
-        <div class="img_box col-s-12 col-l-4 col-4">
-            <table style="text-align: center; width: 100%; margin: 3% 0%;">
-                <caption style="font-weight: bold; width: 100%;"><h2>Asesorias</h2></caption>
-                <tr>
-                    <td><a href="AgregarAsesoriaC">Ingreso Asesoria</a></td>
-                </tr>
-                <tr>
-                    <td><a href="ListarAsesoriaC">Listado de Asesorias</a></td>
-                </tr>
-             </table>
-        </div>
       
         </div>
 <footer>

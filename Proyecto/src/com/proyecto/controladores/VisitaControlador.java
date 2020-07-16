@@ -30,7 +30,7 @@ public class VisitaControlador {
 	}
 	
 	@RequestMapping(value="/AgregarVisitaC", method= RequestMethod.POST)
-	public String Agregar(@ModelAttribute("vis") Visitas vis) {
+	public String AgregarVisita(@ModelAttribute("vis") Visitas vis) {
 		daovis.AgregarVisita(vis);
 		log.info("Visita creada; " + vis.toString());
 		return "redirect:/ListarVisitaC";

@@ -18,7 +18,7 @@ public class VisitasDao {
 		}
 	
 	public int AgregarVisita(Visitas v){    
-	    String sql="insert into Visitas (idvisita, direccion, ciudad, fecha, resumen, observaciones, rut_id, empleado_rutempleado) values('null','"+v.getDireccion()+"','"+v.getCiudad()+"','"+v.getResumen()+"','"+v.getObservaciones()+"','"+v.getRut_Id()+"','"+v.getEmpleado_RutEmpleado()+"')";
+	    String sql="insert into Visitas (idvisita, direccion, ciudad, fecha, resumen, observaciones, rut_id, empleado_rutempleado) values   ( 'null' , ' "+v.getDireccion()+"','"+v.getCiudad()+"','"+v.getResumen()+"','"+v.getObservaciones()+"','"+v.getRut_Id()+"','"+v.getEmpleado_RutEmpleado()+"')";
 	    return template.update(sql);
 	    }
 	

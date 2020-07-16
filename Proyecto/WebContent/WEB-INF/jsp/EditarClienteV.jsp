@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -22,55 +22,65 @@
         })
     </script>
 </head>
-    <body>
-        <header>
-            <input type="checkbox" id="btn-menu" />
-    <label for="btn-menu"><i class="fa fa-bars"></i></label>
-    <nav class="menu" style="z-index: 4;">
-        <div id="logo"><a href="./index.jsp"><img src="./img/logo.png" title="Logo Segurimax"></a>
-        </div>
-<ul>
-    <li><a href="./index.jsp">Inicio</a></li>
-    <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
-      <ul>
-        <li><a href="${pageContext.request.contextPath}/AgregarCliente">Crear Cliente</a></li>
-        <li><a href="${pageContext.request.contextPath}/EditarCliente.jsp">Editar Cliente</a></li>
-        <li><a href="${pageContext.request.contextPath}/EliminarCliente.jsp">Borrar Cliente</a></li>
-        <li><a href="${pageContext.request.contextPath}/ListadoGlobal">Informe Cliente</a></li>
-        <li><a href="${pageContext.request.contextPath}/ListadoClientes">Listado de Clientes</a></li>
-      </ul>
-    </li>
-    <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
-      <ul>
-          <li><a href="#">Crear Profesional</a></li>
-          <li><a href="${pageContext.request.contextPath}/AgregarEmpleado">Ingresar Profesional</a></li>
-        <li><a href="${pageContext.request.contextPath}/EditarEmpleado.jsp">Editar Profesional</a></li>
-        <li><a href="${pageContext.request.contextPath}/EliminarEmpleado.jsp">Borrar Profesional</a></li>
-        <li><a href="${pageContext.request.contextPath}/ListadoEmpleados">Listado de Profesionales</a></li>
-        <li><a href="${pageContext.request.contextPath}/AgregarVisita">Agendar Visita</a></li>
-        <li><a href="${pageContext.request.contextPath}/ListarVisita">Vistas Agendas</a></li>
-      </ul>
-      
-      
-    </li>
-    <li><a href="#">Accidentes</a>
+<body style="background-image: url(./img/fondo.svg); background-position: center center; margin: 0%;">
+    <header>
+        <input type="checkbox" id="btn-menu" />
+<label for="btn-menu"><i class="fa fa-bars"></i></label>
+ <nav class="menu" style="z-index: 4;">
         <ul>
-            <li><a href="${pageContext.request.contextPath}/AgregarAccidente">Ingreso Accidente</a></li>
-            <li><a href="${pageContext.request.contextPath}/ListadoAccidentes">Listado Accidentes</a></li>
-        </ul></li>
-   
-    <li><a href="#">Pagos</a>
-        <ul>
-            <li><a href="${pageContext.request.contextPath}/AgregarPago.jsp">Ingreso Pago</a></li>
-            <li><a href="${pageContext.request.contextPath}/ListadoPagos">Informe Pagos</a></li>
-            <li><a href="${pageContext.request.contextPath}/ListarAtrasos.jsp">Pagos Atrasados</a></li>
-        </ul></li>
-        <li><a href="${pageContext.request.contextPath}/Global">Informe Global</a>
-           </li>
+            <li><a href="./index.jsp">Inicio</a></li>
+            <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
+              <ul>
+                <li><a href="AgregarClienteC">Crear Cliente</a></li>
+                <li><a href="EditarClienteV">Editar Cliente</a></li>
+                <li><a href="EliminarClienteC">Borrar Cliente</a></li>
+                <li><a href="ListarClienteC">Listado de Clientes</a></li>
+              </ul>
+            </li>
+            <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
+              <ul>
+                  <li><a href="AgregarEmpleadoC">Ingresar Profesional</a></li>
+                <li><a href="EditarEmpleadoV">Editar Profesional</a></li>
+                <li><a href="EliminarEmpleadoC">Borrar Profesional</a></li>
+                <li><a href="ListarEmpleadoC">Listado de Profesionales</a></li>
+                <li><a href="AgregarVisitaC">Agendar Visita</a></li>
+                <li><a href="ListarVisitaC">Vistas Agendas</a></li>
+              </ul>
+              
+              
+            </li>
+            <li><a href="#">Accidentes</a>
+                <ul>
+                    <li><a href="AgregarAccidenteC">Ingreso Accidente</a></li>
+                    <li><a href="ListarAccidenteC">Listado Accidentes</a></li>
+                </ul></li>
+                 <li><a href="#">Visitas</a>
+                <ul>
+                    <li><a href="AgregarVisitaC">Agregar Visita</a></li>
+                    <li><a href="ListarVisitaC">Listar Visitas</a></li>
+                </ul></li>
             
-  </ul>
+            <li><a href="#">Pagos</a>
+                <ul>
+                    <li><a href="AgregarPagoC">Ingreso Pago</a></li>
+                    <li><a href="ListarPagoC">Informe Pagos</a></li>
+                    <li><a href="ListarAtrasosC">Pagos Atrasados</a></li>
+                </ul></li>
+                
+                <li><a href="#">Asesorias</a>
+                <ul>
+                    <li><a href="AgregarAsesoriaC">Ingreso Asesoria</a></li>
+                    <li><a href="ListarAsesoriaC">Listado de Asesorias</a></li>
+                </ul></li>
+                <li><a href="ListarGlobalC">Informe Global</a></li>
+                <li><a href="ListarActividadesC">Reporte de Actividades</a></li>
+                    
+            </ul>
         </nav>
-    </header>
+</header>
+    <div id="header_img">
+        <img src="./img/img_header_admin.png" title="Segurimax - Inicio" style="width: 100%;">
+    </div>
             <div id="titulo">
             <h1>Editar Cliente</h1>
             <h3 style="margin-bottom: 3%;">Por favor, ingrese el RUT sin puntos y guion</h3>
@@ -103,7 +113,7 @@
                 
         </div>
         <footer>
-            <p>Diseño - Talentosos Desarrolladores Jr - 2020</p>
+            <p>DiseÃ±o - Talentosos Desarrolladores Jr - 2020</p>
         </footer>
     </body>
 

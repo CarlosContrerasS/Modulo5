@@ -33,7 +33,6 @@
                 <li><a href="EditarClienteV">Editar Cliente</a></li>
                 <li><a href="EliminarClienteC">Borrar Cliente</a></li>
                 <li><a href="ListarClienteC">Listado de Clientes</a></li>
-                <li><a href="/ListadoGlobal">Informe Cliente</a></li>
               </ul>
             </li>
             <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
@@ -93,12 +92,12 @@
 ​
                 <div class="img_box col-s-12 col-l-4 col-4">
                     <a href="#"><img src="./img/cliente.svg"></a> <br>
-                    <h4><a href="${pageContext.request.contextPath}/AgregarPago">Clientes</a></h4><br>
+                    <h4><a href="AccesoClienteC">Clientes</a></h4><br>
                 </div>
             
                 <div class="img_box col-s-12 col-l-4 col-4">
                     <a href="#"><img src="./img/profesional.svg"></a> <br>
-                    <h4><a href="${pageContext.request.contextPath}/AgregarCliente">Profesionales</a></h4><br>
+                    <h4><a href="AccesoProfesionalC">Profesionales</a></h4><br>
                 </div>
             
                 <div class="img_box col-s-12 col-l-4 col-4">

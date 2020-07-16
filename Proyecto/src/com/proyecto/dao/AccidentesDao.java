@@ -19,7 +19,7 @@ public class AccidentesDao {
 	
 	public int AgregarAccidenteM(Accidentes acc){    
 	    String sql="insert into Accidentes (IdAccidente, Fecha, Hora, Suceso, Lugar, Rut_Id, "
-	    		+ "Dias_Perdidos, Num_Trab ) values(null,'"+acc.getIdAccidente()+"', '"+ acc.getFecha() +"', '"+acc.getHora()+"','"+acc.getSuceso()+"', '"+acc.getLugar()+"', '"+acc.getRut_Id()+"', '"+acc.getDias_Perdidos()+"', '"+acc.getNum_Trab()+"')";
+	    		+ "Dias_Perdidos, Num_Trab ) values( 'null' , ' "+acc.getIdAccidente()+"', '"+ acc.getFecha() +"', '"+acc.getHora()+"','"+acc.getSuceso()+"', '"+acc.getLugar()+"', '"+acc.getRut_Id()+"', '"+acc.getDias_Perdidos()+"', '"+acc.getNum_Trab()+"')";
 	    return template.update(sql);
 	}
 

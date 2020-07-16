@@ -1,5 +1,5 @@
 CREATE TABLE accidentes (
-    idaccidente  NUMBER NOT NULL,
+    idaccidente  NUMBER,
     fecha        VARCHAR2(10) NOT NULL,
     hora         VARCHAR2(10) NOT NULL,
     suceso       VARCHAR2(500) NOT NULL,
@@ -19,7 +19,7 @@ BEGIN
 SELECT idacci.NEXTVAL INTO :NEW.idaccidente FROM DUAL;
 END;
 CREATE TABLE asesorias (
-    idasesoria        NUMBER NOT NULL,
+    idasesoria        NUMBER,
     detalle           VARCHAR2(500),
     gestion           VARCHAR2(500) NOT NULL,
     propuestas        VARCHAR2(500),
@@ -38,7 +38,7 @@ BEGIN
 SELECT idase.NEXTVAL INTO :NEW.idasesoria FROM DUAL;
 END;
 CREATE TABLE capacitaciones (
-    idcapacitacion    NUMBER NOT NULL,
+    idcapacitacion    NUMBER,
     fecha             VARCHAR2(10) NOT NULL,
     hora              VARCHAR2(10) NOT NULL,
     numasistentes     NUMBER,
@@ -55,7 +55,7 @@ BEGIN
 SELECT idcapa.NEXTVAL INTO :NEW.idcapacitacion FROM DUAL;
 END;
 CREATE TABLE chequeo (
-    idchequeo         NUMBER NOT NULL,
+    idchequeo         NUMBER,
     detalle           VARCHAR2(10) NOT NULL,
     estado            VARCHAR2(5) NOT NULL,
     visitas_idvisita  NUMBER NOT NULL
@@ -86,7 +86,7 @@ CREATE TABLE empleado (
 );
 ALTER TABLE empleado ADD CONSTRAINT empleado_pk PRIMARY KEY ( rut_empleado);
 CREATE TABLE mejoras (
-    idmejora     NUMBER NOT NULL,
+    idmejora     NUMBER,
     fecha        VARCHAR2(10),
     motivo       VARCHAR2(500),
     actividades  VARCHAR2(500),
@@ -104,7 +104,7 @@ BEGIN
 SELECT idmej.NEXTVAL INTO :NEW.idmejora FROM DUAL;
 END;
 CREATE TABLE pagos (
-    idpago            NUMBER NOT NULL,
+    idpago            NUMBER,
     fechapago         VARCHAR2 (11) NOT NULL,
     montoregular      NUMBER,
     montoadicional    NUMBER,
@@ -121,7 +121,7 @@ BEGIN
 SELECT idpag.NEXTVAL INTO :NEW.idpago FROM DUAL;
 END;
 CREATE TABLE visitas (
-    idvisita             NUMBER NOT NULL,
+    idvisita             NUMBER,
     direccion            VARCHAR2(100),
     ciudad               VARCHAR2(50),
     fecha                VARCHAR2(10),
