@@ -27,52 +27,10 @@
     <nav class="menu" style="z-index: 4;">
         <ul>
             <li><a href="./index.jsp">Inicio</a></li>
-            <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
-              <ul>
-                <li><a href="AgregarClienteC">Crear Cliente</a></li>
-                <li><a href="EditarClienteV">Editar Cliente</a></li>
-                <li><a href="EliminarClienteC">Borrar Cliente</a></li>
-                <li><a href="ListarClienteC">Listado de Clientes</a></li>
-              </ul>
-            </li>
-            <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
-              <ul>
-                  <li><a href="AgregarEmpleadoC">Ingresar Profesional</a></li>
-                <li><a href="EditarEmpleadoV">Editar Profesional</a></li>
-                <li><a href="EliminarEmpleadoC">Borrar Profesional</a></li>
-                <li><a href="ListarEmpleadoC">Listado de Profesionales</a></li>
-                <li><a href="AgregarVisitaC">Agendar Visita</a></li>
-                <li><a href="ListarVisitaC">Vistas Agendas</a></li>
-              </ul>
+            <li><a href="AccesoClienteC"> Acceso a Clientes</a>
+            <li><a href="AccesoProfesionalC"> Acceso a Profesionales</a>
+             <li><a href="AccesoAdministradorC"> Acceso a Administrador</a> 
               
-              
-            </li>
-            <li><a href="#">Accidentes</a>
-                <ul>
-                    <li><a href="AgregarAccidenteC">Ingreso Accidente</a></li>
-                    <li><a href="ListarAccidenteC">Listado Accidentes</a></li>
-                </ul></li>
-                 <li><a href="#">Visitas</a>
-                <ul>
-                    <li><a href="AgregarVisitaC">Agregar Visita</a></li>
-                    <li><a href="ListarVisitaC">Listar Visitas</a></li>
-                </ul></li>
-            
-            <li><a href="#">Pagos</a>
-                <ul>
-                    <li><a href="AgregarPagoC">Ingreso Pago</a></li>
-                    <li><a href="ListarPagoC">Informe Pagos</a></li>
-                    <li><a href="ListarAtrasosC">Pagos Atrasados</a></li>
-                </ul></li>
-                
-                <li><a href="#">Asesorias</a>
-                <ul>
-                    <li><a href="AgregarAsesoriaC">Ingreso Asesoria</a></li>
-                    <li><a href="ListarAsesoriaC">Listado de Asesorias</a></li>
-                </ul></li>
-                <li><a href="ListarGlobalC">Informe Global</a></li>
-                <li><a href="ListarActividadesC">Reporte de Actividades</a></li>
-                    
             </ul>
         </nav>
     </header>
@@ -91,17 +49,17 @@
             <div class="contenedor_img_box col-s-12 col-l-12 col-12">
 ​
                 <div class="img_box col-s-12 col-l-4 col-4">
-                    <a href="#"><img src="./img/cliente.svg"></a> <br>
+                    <a href="AccesoClienteC"><img src="./img/cliente.svg"></a> <br>
                     <h4><a href="AccesoClienteC">Clientes</a></h4><br>
                 </div>
             
                 <div class="img_box col-s-12 col-l-4 col-4">
-                    <a href="#"><img src="./img/profesional.svg"></a> <br>
+                    <a href="AccesoProfesionalC"><img src="./img/profesional.svg"></a> <br>
                     <h4><a href="AccesoProfesionalC">Profesionales</a></h4><br>
                 </div>
             
                 <div class="img_box col-s-12 col-l-4 col-4">
-                    <a href="acceso administrador.html"><img src="./img/administrador.svg"></a>
+                    <a href="AccesoAdministradorC"><img src="./img/administrador.svg"></a>
                     <h4><a href="AccesoAdministradorC">Administrador</a></h4><br>
                 </div>
           

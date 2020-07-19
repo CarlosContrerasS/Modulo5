@@ -6,7 +6,7 @@ public class Mejoras {
 	private String Motivo;
 	private String Actividades;
 	private String Estado;
-	private int Rut;
+	private int Rut_ID;
 
 
 	public Mejoras( int IDMejora, String Fecha, String Motivo, String Actividades, String Estado, int Rut) {
@@ -16,7 +16,7 @@ public class Mejoras {
 		this.Motivo = Motivo;
 		this.Actividades = Actividades;
 		this.Estado = Estado;
-		this.Rut = Rut;
+		this.Rut_ID = Rut;
 		
 	}
 	
@@ -64,20 +64,20 @@ public class Mejoras {
 		Estado = estado;
 	}
 
-	public int getRut() {
-		return Rut;
+	public int getRut_ID() {
+		return Rut_ID;
 	}
 
-	public void setRut(int rut) {
-		Rut = rut;
+	public void setRut_ID(int rut) {
+		Rut_ID = rut;
 	}
 
 	@Override
 	public String toString() {
 		return "Mejoras [IDMejora=" + IDMejora + ", Fecha=" + Fecha + ", Motivo=" + Motivo + ", Actividades="
-				+ Actividades + ", Estado=" + Estado + ", Rut=" + Rut + ", getIDMejora()=" + getIDMejora()
+				+ Actividades + ", Estado=" + Estado + ", Rut_ID=" + Rut_ID + ", getIDMejora()=" + getIDMejora()
 				+ ", getFecha()=" + getFecha() + ", getMotivo()=" + getMotivo() + ", getActividades()="
-				+ getActividades() + ", getEstado()=" + getEstado() + ", getRut()=" + getRut() + "]";
+				+ getActividades() + ", getEstado()=" + getEstado() + ", getRut_ID()=" + getRut_ID() + "]";
 	}
 	
 }

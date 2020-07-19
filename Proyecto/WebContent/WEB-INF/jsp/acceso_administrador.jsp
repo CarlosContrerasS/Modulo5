@@ -41,8 +41,6 @@ ev.stopPropagation();
                 <li><a href="EditarEmpleadoV">Editar Profesional</a></li>
                 <li><a href="EliminarEmpleadoC">Borrar Profesional</a></li>
                 <li><a href="ListarEmpleadoC">Listado de Profesionales</a></li>
-                <li><a href="AgregarVisitaC">Agendar Visita</a></li>
-                <li><a href="ListarVisitaC">Vistas Agendas</a></li>
               </ul>
               
               
@@ -70,8 +68,30 @@ ev.stopPropagation();
                     <li><a href="AgregarAsesoriaC">Ingreso Asesoria</a></li>
                     <li><a href="ListarAsesoriaC">Listado de Asesorias</a></li>
                 </ul></li>
-                <li><a href="ListarGlobalC">Informe Global</a></li>
-                <li><a href="ListarActividadesC">Reporte de Actividades</a></li>
+                
+                 <li><a href="#">Capacitaciones</a>
+                <ul>
+                    <li><a href="AgregarCapacitacionesC">Ingreso Capacitaciones</a></li>
+                    <li><a href="ListarCapacitacionesC">Listado de Capacitaciones</a></li>
+                </ul></li>
+                
+                 <li><a href="#">Chek List</a>
+                <ul>
+                    <li><a href="AgregarChequeoC">Ingreso Chek List</a></li>
+                    <li><a href="ListarChequeoC">Listado de Check List</a></li>
+                </ul></li>
+                
+                 <li><a href="#"> Mejoras</a>
+                <ul>
+                    <li><a href="AgregarMejorasC ">Ingreso Mejoras</a></li>
+                    <li><a href="ListarMejorasC">Listado de Mejoras</a></li>
+                </ul></li>
+                
+                 <li><a href="#">Informes</a>
+                <ul>
+                    <li><a href="ListarGlobalC">Ingreso Global</a></li>
+                    <li><a href="ListarActividadesC">Reporte de Actividades</a></li>
+                </ul></li>
                     
             </ul>
         </nav>
@@ -173,6 +193,44 @@ ev.stopPropagation();
                 </tr>
                 <tr>
                     <td><a href="ListarAsesoriaC">Listado de Asesorias</a></td>
+                </tr>
+             </table>
+        </div>
+        
+        </div>
+        <div class="contenedor_img_box col-s-12 col-l-12 col-12" style="margin: 10% 0%;">
+        <div class="img_box col-s-12 col-l-4 col-4">
+            <table style="text-align: center; width: 100%; margin: 3% 0%;">
+                <caption style="font-weight: bold; width: 100%;"><h2>Capacitaciones</h2></caption>
+                <tr>
+                    <td><a href="AgregarCapacitacionesC">Ingreso Capacitaciones</a></td>
+                </tr>
+                <tr>
+                    <td><a href="ListarCapacitacionesC">Listado de Capacitaciones</a></td>
+                </tr>
+             </table>
+        </div>
+        
+        <div class="img_box col-s-12 col-l-4 col-4">
+            <table style="text-align: center; width: 100%; margin: 3% 0%;">
+                <caption style="font-weight: bold; width: 100%;"><h2> Chek List</h2></caption>
+                <tr>    
+                    <td><a href="AgregarChequeoC">Ingreso Chek List</a></td>
+                </tr>
+                <tr>
+                    <td><a href="ListarChequeoC">Listado de Check List</a></td>
+                </tr>
+             </table>
+        </div>
+        
+        <div class="img_box col-s-12 col-l-4 col-4">
+            <table style="text-align: center; width: 100%; margin: 3% 0%;">
+                <caption style="font-weight: bold; width: 100%;"><h2>Mejoras</h2></caption>
+                <tr>
+                <td><a href="AgregarMejorasC ">Ingreso Mejoras</a></td>
+                </tr>
+                <tr>
+                    <td><a href="ListarMejorasC">Listado de Mejoras</a></td>
                 </tr>
              </table>
         </div>

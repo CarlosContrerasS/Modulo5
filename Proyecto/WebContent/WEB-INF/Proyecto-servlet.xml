@@ -68,4 +68,13 @@
 	<bean id="daorepG" class="com.proyecto.dao.ReporteGlobalDao">    
 		<property name="template" ref="jt"></property>    
 	</bean>
+	<bean id="daomej" class="com.proyecto.dao.MejorasDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	<bean id="daocap" class="com.proyecto.dao.CapacitacionesDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	<bean id="daoche" class="com.proyecto.dao.ChequeoDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
 </beans>

@@ -27,52 +27,43 @@ ev.stopPropagation();
  <nav class="menu" style="z-index: 4;">
         <ul>
             <li><a href="./index.jsp">Inicio</a></li>
-            <li class="submenu"><a href="#">Clientes <i class="fa fa-caret-down"></i></a>
-              <ul>
-                <li><a href="AgregarClienteC">Crear Cliente</a></li>
-                <li><a href="EditarClienteV">Editar Cliente</a></li>
-                <li><a href="EliminarClienteC">Borrar Cliente</a></li>
-                <li><a href="ListarClienteC">Listado de Clientes</a></li>
-              </ul>
-            </li>
-            <li class="submenu"><a href="#">Profesionales<i class="fa fa-caret-down"></i></a>
-              <ul>
-                  <li><a href="AgregarEmpleadoC">Ingresar Profesional</a></li>
-                <li><a href="EditarEmpleadoV">Editar Profesional</a></li>
-                <li><a href="EliminarEmpleadoC">Borrar Profesional</a></li>
-                <li><a href="ListarEmpleadoC">Listado de Profesionales</a></li>
-                <li><a href="AgregarVisitaC">Agendar Visita</a></li>
-                <li><a href="ListarVisitaC">Vistas Agendas</a></li>
-              </ul>
-              
-              
-            </li>
-            <li><a href="#">Accidentes</a>
+                 
+            <li><a class="submenu" href="#">Accidentes<i class="fa fa-caret-down"></i></a>
                 <ul>
                     <li><a href="AgregarAccidenteC">Ingreso Accidente</a></li>
                     <li><a href="ListarAccidenteC">Listado Accidentes</a></li>
                 </ul></li>
-                 <li><a href="#">Visitas</a>
+                 <li><a  class="submenu"  href="#">Visitas<i class="fa fa-caret-down"></i></a>
                 <ul>
                     <li><a href="AgregarVisitaC">Agregar Visita</a></li>
                     <li><a href="ListarVisitaC">Listar Visitas</a></li>
                 </ul></li>
             
-            <li><a href="#">Pagos</a>
-                <ul>
-                    <li><a href="AgregarPagoC">Ingreso Pago</a></li>
-                    <li><a href="ListarPagoC">Informe Pagos</a></li>
-                    <li><a href="ListarAtrasosC">Pagos Atrasados</a></li>
-                </ul></li>
-                
-                <li><a href="#">Asesorias</a>
+                            
+                <li><a class="submenu"  href="#">Asesorias<i class="fa fa-caret-down"></i></a>
                 <ul>
                     <li><a href="AgregarAsesoriaC">Ingreso Asesoria</a></li>
                     <li><a href="ListarAsesoriaC">Listado de Asesorias</a></li>
                 </ul></li>
-                <li><a href="ListarGlobalC">Informe Global</a></li>
-                <li><a href="ListarActividadesC">Reporte de Actividades</a></li>
-                    
+                
+                <li><a class="submenu"  href="#">Capacitaciones<i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="AgregarCapacitacionesC">Ingreso Capacitacion</a></li>
+                    <li><a href="ListarCapacitacionesC">Listado de Capacitaciones</a></li>
+                </ul></li>
+                
+                <li><a class="submenu"  href="#">Mejoras<i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="AgregarMejorasC">Ingreso Mejoras</a></li>
+                    <li><a href="ListarMejorasC">Listado de Mejoras</a></li>
+                </ul></li>
+                
+                <li><a class="submenu"  href="#">Check List<i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="AgregarChequeoC">Ingreso Chek List</a></li>
+                    <li><a href="ListarChequeoC">Listado de Chek List</a></li>
+                </ul></li>
+               
             </ul>
         </nav>
 </header>
@@ -125,8 +116,48 @@ ev.stopPropagation();
                 </tr>
              </table>
         </div>
+        </div>
+        
+         <div class="contenedor_img_box col-s-12 col-l-12 col-12" style="margin: 10% 0%;">
+        
+        <div class="img_box col-s-12 col-l-4 col-4">
+            <table style="text-align: center; width: 100%; margin: 3% 0%;">
+                <caption style="font-weight: bold; width: 100%;"><h2>Capacitaciones</h2></caption>
+                <tr>
+                    <td><a href="AgregarCapacitacionesC">Ingreso Capacitacion</a></td>
+                </tr>
+                <tr>
+                    <td><a href="ListarCapacitacionesC">Listado de Capacitaciones</a></td>
+                </tr>
+             </table>
+        </div>
+        
+        <div class="img_box col-s-12 col-l-4 col-4">
+            <table style="text-align: center; width: 100%; margin: 3% 0%;">
+                <caption style="font-weight: bold; width: 100%;"><h2>Mejoras</h2></caption>
+                <tr>
+                    <td><a href="AgregarMejorasC">Ingreso Mejoras</a></td>
+                </tr>
+                <tr>
+                    <td><a href="ListarMejorasC">Listado de Mejoras</a></td>
+                </tr>
+             </table>
+        </div>
+        
+        <div class="img_box col-s-12 col-l-4 col-4">
+            <table style="text-align: center; width: 100%; margin: 3% 0%;">
+                <caption style="font-weight: bold; width: 100%;"><h2>Chek List</h2></caption>
+                <tr>
+                    <td><a href="AgregarChequeoC">Ingreso Chek List</a></td>
+                </tr>
+                <tr>
+                    <td><a href="ListarChequeoC">Listado de Chek List</a></td>
+                </tr>
+             </table>
+        </div>
       
         </div>
+        
 <footer>
     <p>Diseño - Talentosos Desarrolladores Jr - 2020</p>
 </footer>

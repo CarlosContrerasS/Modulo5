@@ -54,7 +54,7 @@ public class ClienteDao {
 	}
 	
 	public int update(Cliente c){ 
-		String sql="update Cliente set nombre='"+c.getNombre()+"', telefono="+c.getTelefono()+", mail='"+c.getMail()+"', rubro='"+c.getRubro()+"', direccion='"+c.getDireccion()+"' where rut="+ c.getRut() +"";
+		String sql="update Cliente set nombre='"+c.getNombre()+"', telefono="+c.getTelefono()+", mail='"+c.getMail()+"', rubro='"+c.getRubro()+"', direccion='"+c.getDireccion()+"' where rut= '"+ c.getRut() +" '" ;
 	    return template.update(sql);     
 	}  
 	

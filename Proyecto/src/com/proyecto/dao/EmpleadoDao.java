@@ -20,7 +20,7 @@ public class EmpleadoDao {
 	}
 	
 	public int Agregar(Empleado e){    
-	    String sql="insert into Empleado (RUT_EMPLEADO, NOMBREEMPLEADO, ESPECIALIDAD) values('"+e.getRutEmpleado()+"', '"+e.getNombreEmpleado()+"','"+e.getEspecialidad()+"')";
+	    String sql="insert into Empleado (RUT_EMPLEADO, NOMBREEMPLEADO, ESPECIALIDAD) values  ('"+e.getRutEmpleado()+"', '"+e.getNombreEmpleado()+"','"+e.getEspecialidad()+"')";
 	    return template.update(sql);
 	}	
 	

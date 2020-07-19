@@ -6,14 +6,14 @@ public class Capacitaciones {
 	private String Fecha;
 	private String Hora;
 	private int NumAsistentes;
-	private int Visita_IDVisita;
+	private int Visitas_IDVisita;
 
 	
 	public Capacitaciones( int IDCapacitacion, String Fecha, String Hora, int NumAsistentes, int Visita_IDVisita) {
 		this.IDCapacitacion = IDCapacitacion;
 		this.Fecha = Fecha;
 		this.NumAsistentes = NumAsistentes;
-		this.Visita_IDVisita = Visita_IDVisita;
+		this.Visitas_IDVisita = Visita_IDVisita;
 		
 
 	}
@@ -54,20 +54,20 @@ public class Capacitaciones {
 		NumAsistentes = numAsistentes;
 	}
 
-	public int getVisita_IDVisita() {
-		return Visita_IDVisita;
+	public int getVisitas_IDVisita() {
+		return Visitas_IDVisita;
 	}
 
-	public void setVisita_IDVisita(int visita_IDVisita) {
-		Visita_IDVisita = visita_IDVisita;
+	public void setVisitas_IDVisita(int visita_IDVisita) {
+		Visitas_IDVisita = visita_IDVisita;
 	}
 
 	@Override
 	public String toString() {
 		return "Capacitaciones [IDCapacitacion=" + IDCapacitacion + ", Fecha=" + Fecha + ", Hora=" + Hora
-				+ ", NumAsistentes=" + NumAsistentes + ", Visita_IDVisita=" + Visita_IDVisita + ", getIDCapacitacion()="
+				+ ", NumAsistentes=" + NumAsistentes + ", Visita_IDVisita=" + Visitas_IDVisita + ", getIDCapacitacion()="
 				+ getIDCapacitacion() + ", getFecha()=" + getFecha() + ", getHora()=" + getHora()
-				+ ", getNumAsistentes()=" + getNumAsistentes() + ", getVisita_IDVisita()=" + getVisita_IDVisita() + "]";
+				+ ", getNumAsistentes()=" + getNumAsistentes() + ", getVisita_IDVisita()=" + getVisitas_IDVisita() + "]";
 	}
 
 	

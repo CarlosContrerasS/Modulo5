@@ -20,18 +20,18 @@ public class AsesoriasDao {
 																		
 	public int AgregarAsesorias(Asesorias ase){    
 
-	    String sql="insert into Asesorias (IDAsesoria, Detalle, Gestion, Propuestas, Fecha, Pagada, Visita_IDVisita )  values  ( 'null' , ' "+ ase.getIDAsesoria()+"', '"+ ase.getDetalle() +"', '"+ ase.getGestion() + "','" + ase.getPropuestas() + "', '" + ase.getFecha()+ "',' " + ase.getPagada() + "', '" + ase.getVisitas_IDVisita() + "')";
+	    String sql="insert into asesorias (IDAsesoria, Detalle, Gestion, Propuestas, Fecha, Pagada, Visitas_IDVisita )  values  (' "+ ase.getIDAsesoria()+"', '"+ ase.getDetalle() +"', '"+ ase.getGestion() + "','" + ase.getPropuestas() + "', '" + ase.getFecha()+ "',' " + ase.getPagada() + "', '" + ase.getVisitas_IDVisita() + "')";
 	    return template.update(sql);
 	}
 
 	
 	public Asesorias Buscar(int IDAsesoria){    
-		 String sql="select * from Asesorias where IdAsesoria = "+IDAsesoria;
+		 String sql="select * from asesorias where idAsesoria = "+IDAsesoria;
 		    return template.queryForObject(sql, new Object[]{IDAsesoria},new BeanPropertyRowMapper<Asesorias>(Asesorias.class));    
 	}
 	
 	public List<Asesorias> ListarAsesorias(){    
-	    return template.query("select * from Asesorias",new RowMapper<Asesorias>(){    
+	    return template.query("select * from asesorias",new RowMapper<Asesorias>(){    
 	        public Asesorias mapRow(ResultSet rs, int row) throws SQLException {    
 	            Asesorias ase=new Asesorias();    
 	            ase.setIDAsesoria(rs.getInt(1));    

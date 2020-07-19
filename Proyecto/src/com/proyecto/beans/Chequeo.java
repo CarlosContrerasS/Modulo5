@@ -1,22 +1,22 @@
 package com.proyecto.beans;
 
-public class Checklist {
+public class Chequeo {
 	
 	private int IDChequeo;
 	private String Detalle;
 	private String Estado;
-	private int Visita_IDVisita;
+	private int Visitas_IDVisita;
 
 
-	public Checklist(int IDChequeo, String Detalle, String Estado, int Visita_IDVisita) {
+	public Chequeo(int IDChequeo, String Detalle, String Estado, int Visita_IDVisita) {
 
 		this.IDChequeo = IDChequeo;
 		this.Detalle = Detalle;
 		this.Estado = Estado;
-		this.Visita_IDVisita = Visita_IDVisita;
+		this.Visitas_IDVisita = Visita_IDVisita;
 	}
 	
-public Checklist() {
+public Chequeo() {
 		
 	}
 
@@ -44,19 +44,19 @@ public void setEstado(String estado) {
 	Estado = estado;
 }
 
-public int getVisita_IDVisita() {
-	return Visita_IDVisita;
+public int getVisitas_IDVisita() {
+	return Visitas_IDVisita;
 }
 
-public void setVisita_IDVisita(int visita_IDVisita) {
-	Visita_IDVisita = visita_IDVisita;
+public void setVisitas_IDVisita(int visita_IDVisita) {
+	Visitas_IDVisita = visita_IDVisita;
 }
 
 @Override
 public String toString() {
 	return "Checklist [IDChequeo=" + IDChequeo + ", Detalle=" + Detalle + ", Estado=" + Estado + ", Visita_IDVisita="
-			+ Visita_IDVisita + ", getIDChequeo()=" + getIDChequeo() + ", getDetalle()=" + getDetalle()
-			+ ", getEstado()=" + getEstado() + ", getVisita_IDVisita()=" + getVisita_IDVisita() + "]";
+			+ Visitas_IDVisita + ", getIDChequeo()=" + getIDChequeo() + ", getDetalle()=" + getDetalle()
+			+ ", getEstado()=" + getEstado() + ", getVisita_IDVisita()=" + getVisitas_IDVisita() + "]";
 }
 
 	
